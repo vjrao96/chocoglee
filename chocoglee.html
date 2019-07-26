@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+  <title>Document</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+  }
+
+  body{
+        min-width: 100%;
+        max-height : 100%;
+        font-size : 20px;
+        color:black;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    con{
+      width : 100%;
+    }
+
+    #header{
+      font-size : 30px;
+      color : white;
+    }
+
+    nav a{
+      color : white;
+      font-size : 20px;
+    }
+
+    svg{
+      margin-right: 20px;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+
+    #cardProducts{
+      justify-content:space-evenly;
+    }
+
+    #footer{
+      padding:15px;
+      height:20vh;
+    }
+
+    #content{
+      word-wrap:break-word;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!--header -->
+  <div id="header" class="col-lg-12 col-md-12 col-12 con" style="height:100%;background:url(choco.jpg) no-repeat;background-size:cover;">
+        <nav class="navbar navbar-expand-lg bg-inverse">
+            <a class="navbar-brand" href="#">ChocoGlee</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ml-md-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#aboutUs">About Us<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#products">Products</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" data-toggle="modal" data-target="#contactUs">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <!-- Intro -->
+              <div class="container-fluid con">
+                <br>
+                <br>
+                  <div class="row justify-content-center text-center">
+                              <div class="col-lg-5 col-md-5 col-6">
+                                    Experience Happiness
+                              </div>
+                  </div>
+                  <div class="row justify-content-center text-center">
+                              <div class="col-lg-5 col-md-5 col-6">
+                                    From
+                              </div>
+                  </div>
+                  <div class="row justify-content-center text-center">
+                              <div class="col-lg-5 col-md-5 col-8">
+                                    The Finest Handcrafted Chocolates
+                              </div>
+                  </div>
+              </div>
+</div>
+<!--body-->
+  <div class="container">
+
+          <!--About Us-->
+          <div class="row justify-content-center text-center con">
+              <div id="aboutUs" class="col-lg-12 col-md-12 col-12">
+                <br>
+                        <h2 class="row justify-content-center text-center">About us</h2>
+                        <br>
+                        <div class="jumbotron text-justify" id="content">
+                          We are a small group of people who make handcrafted chocolates,cookies,pastries and cupcakes.Our aim is to produce chocolates that are safe to consume and healthy as chocolates are good for heart.The ingredients we use to make chocolates are organic.We raise our own cows,use freshly made jaggery,grow our own vanilla pods,strawberries,raspberries,nuts.We process the cocoa beans at our home which are freshly made everyday.Our chocolates are free of sugar as they contain jaggerry hence they are healthy.The dough is also freshly prepared and gluten-free.Our products are free of eggs.We also cater to Vegans by adding soy-milk or almond milk in our products.We also undertake orders in bulk.Anyone can contact us by reaching out to us through instagram,facebook or whatsapp.We believe that everyone should have access to healthy food so our products are affordable.Besides our shop,we planning to open up an online store so that people from all over the world can access our products.
+                        </div>
+               </div>
+            </div>
+
+
+      <!--Products -->
+              <div class="row con">
+                <div class="col-lg-12 col-md-12 col-12">
+                        <br>
+                        <h2 id="products" class="row justify-content-center text-center">Our Products</h2>
+                        <br>
+
+                      <div class="row" id="cardProducts">
+                        <div class="col-md-3 col-lg-3 col-3">
+                          <div class="card h-100">
+                                <img src="cake.jpg" alt="cake" class="card-img-top">
+                                <div class="card-body">
+                                    <div class="card-title">Chocolate Pastry</div>
+                                    <div>Soft,moist and creamy chocolate pastry</div>
+                                </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-lg-3 col-3">
+                          <div class="card h-100">
+                                <img src="cookies.jpg" alt="cookies" class="card-img-top">
+                                <div class="card-body">
+                                    <div class="card-title">Cookies</div>
+                                    <div>Crispy,chocolaty and gooey cookies</div>
+                                </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3  col-lg-3 col-3">
+                          <div class="card h-100">
+                                <img src="slider2.jpg" alt="cupcakes" class="card-img-top">
+                                <div class="card-body">
+                                    <div class="card-title">Cup cakes</div>
+                                    <div>Moist,creamy and nutty cupcakes</div>
+                                </div>
+                          </div>
+                        </div>
+                      </div>
+
+                </div>
+    </div>
+</div>
+
+            <!--modal body-->
+            <div class="modal" tabindex="-1" role="dialog" id="contactUs">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Contact Us Form</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container-fluid">
+		                    <div class="container">
+                  			<div class="formBox">
+                  				<form>
+                  						<div class="row">
+                  							<div class="col-lg-6 col-md-6 col-6">
+                  								<div class="inputBox">
+                                    <div class="inputText">Name</div>
+                  									<input type="text" class="input">
+                  								</div>
+                  							</div>
+
+                                <div class="col-lg-6 col-md-6 col-6">
+                                  <div class="inputBox">
+                                    <div class="inputText">Email</div>
+                                    <input type="text" class="input">
+                                  </div>
+                                </div>
+                  					  </div>
+
+                  						<div class="row">
+                    							<div class="col-lg-6 col-md-6 col-6">
+                    								<div class="inputBox">
+                    									<div class="inputText">Mobile</div>
+                    									<input type="text" class="input">
+                    								</div>
+                    							</div>
+                  						</div>
+                  				</form>
+                  			</div>
+                  		</div>
+	                  </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- footer-->
+              <br>
+              <div id="footer" class="col-md-12 col-lg-12 col-12 con" style="background:url(footer.jpg) center center no-repeat;background-size:cover;">
+                <div class="row justify-content-center text-center">
+                      <a href="https://www.facebook.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                      <a href="https://www.gmail.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a>
+                      <a href="https://www.instagram.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg></a>
+                </div>
+            </div>
+</body>
+</html>
